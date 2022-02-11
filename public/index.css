@@ -1,0 +1,22 @@
+.user {
+    margin-bottom: 1rem;
+}
+
+.user label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #f3f3f3;
+    padding: 1rem;
+}
+
+#button {
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+#delete {
+    background: rgb(236, 94, 94);
+}

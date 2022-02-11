@@ -1,0 +1,17 @@
+<h1>Users page</h1>
+
+{{#if users.length}}
+<ul>
+    {{#each users}}
+        <li class="user">
+            <label>
+                <span>{{username}}</span>
+                <button class="btn btn-small" id="button">Edit</button>
+                <button class="btn btn-small" id="delete">Delete</button>
+            </label>
+        </li>
+    {{/each}}
+</ul>
+{{else}}
+<p>Users list is empty :(</p>
+{{/if}}
