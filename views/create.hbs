@@ -1,10 +1,11 @@
 <form action="/create" method="POST">
-    <h1>Create user desk</h1>
+    <input type="hidden" name="_id" value="{{user._id}}">
+    <h1>{{title}}</h1>
     <div class="input-field">
         <input type="text" name="username">
         <label>Username</label>
     </div>
 
-    <button type="submit" class="btn">Create</button>
+    <button type="submit" class="btn">Submit</button>
 </form>
 

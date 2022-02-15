@@ -5,9 +5,9 @@
     {{#each users}}
         <li class="user">
             <label>
-                <span>{{username}}</span>
-                <button class="btn btn-small" id="button">Edit</button>
-                <button class="btn btn-small" id="delete">Delete</button>
+                <span id="username">{{username}}</span>
+                <a href="/{{this._id}}" class="waves-effect waves-light btn-large" id="edit">Edit</a>
+                <a href="/delete/{{this._id}}" onclick="return confirm('Are u sure to del?');" class="waves-effect waves-light btn-large" id="delete">Delete</a>
             </label>
         </li>
     {{/each}}
